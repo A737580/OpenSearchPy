@@ -53,7 +53,7 @@ cd openSearchPy
 docker-compose up -d
 ```
 
-### 2. Запускаем Fast API
+### 3. Запускаем Web-сервер
 
 ```bash
 python main.py
