@@ -79,6 +79,6 @@ GET /search
 GET    /docs           
         Описание: документация swagger - веб интерфейс для работы с апи
 GET    /http://localhost:5601
-        Описание: OpenSearch Dashboards - альтернативный веб интерфейс для админестирования хранилища OpenSearch
+        Описание: OpenSearch Dashboards - альтернативный веб интерфейс для администирования хранилища OpenSearch
 ```
 
