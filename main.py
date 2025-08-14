@@ -3,6 +3,7 @@ from faker import Faker
 from fastapi import FastAPI
 import random
 from core.opensearch_client import create_index, index_documents, search_documents, settings
+from fastapi.responses import RedirectResponse
 from typing import Optional
 from core.models import ContentType
 
@@ -13,6 +14,10 @@ fake = Faker()
 @app.on_event("startup")
 async def startup_event():
     create_index()
+
+@app.get("/")
+async def redirect_to_docs():
+    return RedirectResponse(url="/docs")
 
 @app.post("/load_data")
 def load_data():
